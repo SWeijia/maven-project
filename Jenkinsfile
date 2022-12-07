@@ -27,8 +27,8 @@ pipeline {
         
         stage('Publsih to Docker Hub ') {
             steps {
-                sh "docker tag webapp:v${BUILD_NUMBER} saidevopsworld/webapp:v${BUILD_NUMBER}"
-                sh "docker push saidevopsworld/webapp:v${BUILD_NUMBER}"
+                sh "docker tag webapp:v${BUILD_NUMBER} cuctu/webapp:v${BUILD_NUMBER}"
+                sh "docker push cuctu/webapp:v${BUILD_NUMBER}"
             }
         }
         
